@@ -1,0 +1,485 @@
+/*----------------
+    RESET
+------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*----------------
+    COMMONS
+------------------*/
+.img-fluid {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*----------------
+    LAYOUT
+------------------*/
+.container {
+    display: flex;
+
+}
+/*----------------
+    TYPOGRAPHY
+------------------*/
+body {
+    height: 100vh;
+    color: #7d7f84;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+.app-web{
+    display: flex;
+    height: calc(100% - 90px);
+}
+
+/*----------------
+    BUTTONS
+------------------*/
+
+.btn-upgrade{
+    padding: 10px 40px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    font-weight: 600;
+    border-radius: 30px;
+    color: #fff;
+}
+
+.btn{
+    border: none;
+}
+
+/*----------------
+    HEADER
+------------------*/
+
+header{
+    width: 50px;
+    background-color: black;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    padding: 10px;
+    flex-direction: column;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #555; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #888;
+    transition: 0.5s;
+  }
+
+
+
+
+.brand-logo{
+    display: none;
+}
+
+.nav-menu ul li{
+    font-weight:600;
+}
+
+.nav-menu ul li img{
+    width: 100%
+}
+
+.nav-menu span{
+    display: none;
+    cursor: pointer;
+}
+
+.nav-menu ul li:nth-child(2){
+    color: #fff;
+}
+
+.nav-menu span:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.playlist ul{
+    list-style: none;
+}
+
+.playlist ul li{
+    margin-bottom: 11px;
+    cursor: pointer;
+}
+
+.playlist ul li:not(li:first-child){
+    font-weight: 600;
+}
+
+.playlist ul li >h3{
+    color: #fff;
+    font-size: 20px;
+}
+
+.playlist ul li:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.playlist ul li:nth-child(2) i:hover{
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.playlist ul li:nth-child(2) i{
+    width: 26px;
+    height: 33px;
+    background-color: #7d7f84;
+    line-height: 32px;
+    border: none;
+    vertical-align: middle;
+}
+
+.playlist{
+    display: none;
+}
+
+.user-menu ul li:first-child img{
+    width:25px 
+}
+
+.user-menu ul li:last-child > img{
+    background-color: #808080;
+    border-radius: 50%;
+}
+
+.user-menu ul li{
+    text-align: center;
+}
+
+.user-menu span:hover{
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.user-menu span{
+    display: none;
+    font-weight: 600;
+}
+
+
+/*----------------
+    MAIN
+------------------*/
+main{
+    overflow-y:auto;
+    background-color: #141922;
+    color: #7d7f84 ;
+    flex-grow: 1;
+
+}
+
+.main-head{
+    background-color: #080b12;
+    justify-content: flex-end;
+    height: 80px;
+    padding:20px;
+    align-items: center;
+    display: flex;
+}
+
+.main-body{
+    padding: 15px;
+}
+
+.primary-nav{
+    padding-bottom: 15px;
+    font-weight: 400;
+}
+
+.primary-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.primary-nav ul li:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+section h2{
+    color: #fff;
+    margin:  25px 0;
+}
+
+.card-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col h3{
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+}
+
+.subtitle{
+    margin-bottom: 23px;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.col h4{
+    text-align: center;
+    font-size: 10px;
+}
+
+.col{
+    padding: 5px;
+    margin-bottom: 20px;
+    width: calc(100% / 2);
+}
+
+.card-cover{
+    position: relative;
+    padding: 6px;
+}
+
+.card-cover:hover img{
+    opacity: 0.3;
+    transition: 0.4s;
+}
+
+.card-cover:hover .hover-play{
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.card-cover img{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+.card-cover .hover-play{
+    color: #fff;
+    transform: translate(-50%, -50%);
+    top:50%;
+    opacity: 0;
+    left:50%;
+    position: absolute;
+    cursor: pointer;
+    font-size: 80px;
+    
+}
+
+section:last-child img{
+    border-radius: 50%;
+}
+
+
+
+
+/*----------------
+    FOOTER
+------------------*/
+
+footer{
+    height: 90px;
+    background-color: #282828;
+    justify-content: space-between;
+    display: flex;
+}
+
+.player-info{
+    max-height: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    display: flex;  
+}
+
+.song{
+    padding-left: 9px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.action-icons{
+    padding-left: 9px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.player-controls{
+    flex-direction: column;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.control-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-bar{
+    display: flex;
+    align-items: center;
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+}
+
+.progress-bar input {
+    border-radius: 6px;
+    width: 100%;
+    background-color: #5a5a5a;
+    height: 6px;
+    border: none;
+    position: relative;
+}
+
+.time{
+    padding: 0 9px;
+}
+
+
+
+.extra-controls{
+    display: flex;
+    align-items: center;
+}
+
+.extra-controls i{
+    padding-right: 8px;
+}
+
+#vol{
+    height: 5px;
+    width: 30%;
+}
+
+
+
+
+
+
+/* ----------------------------
+        SCALABLE
+------------------------------- */
+
+@media screen and (min-width:552px){
+    
+    .app-web{
+        height: calc(100% - 100px);
+    }
+    
+    header{
+        width: 240px;
+        padding-left: 20px;
+        overflow-y: scroll;
+    }
+
+
+    .logo-big{
+        display: block;
+        margin-right: 70px;
+        height: 90px;
+    }
+
+    .nav-menu ul{
+        list-style: none;
+    }
+
+    .nav-menu ul li{
+        padding-bottom: 20px;
+    }
+
+    .nav-menu ul li:first-child{
+        display: none;
+    }
+
+    .nav-menu ul li img{
+        width: 30px;
+        vertical-align: middle;
+    }
+    
+    .nav-menu span{
+        display: inline;
+    }
+
+    .playlist{
+        display: block;
+    }
+
+    .user-menu ul li img{
+        width: 30px;
+        vertical-align: middle;
+    }
+
+    .user-menu ul{
+        list-style: none;
+    }
+
+    .user-menu ul li{
+        text-align: left;
+        padding: 10px;
+
+    }
+
+    .user-menu ul li:first-child{
+        border-bottom: 1px solid #fff
+    }
+
+    .user-menu span{
+        display: inline;
+    }
+
+    /* main */
+
+    footer{
+        height: 100px;
+    }
+    
+}
+/* responsive md */
+@media screen and (min-width:878px){
+    .col{
+        width: calc(100% / 4);
+    }
+}
+
+/* responsive lg */
+@media screen and (min-width:1440px){
+    .col{
+        width: calc(100% / 6);
+    }
+}

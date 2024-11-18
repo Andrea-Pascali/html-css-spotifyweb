@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html-Css-Spotifyweb</title>
+    <!-- Google Fonts: https://fonts.google.com/ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- /Google Fonts -->
+    <!-- Font Awesome: https://fontawesome.com/search?o=r&m=free -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- /Font Awesome -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-web">
+        <header>
+            <div class="header-top">
+                <div class="brand-logo">
+                    <img class="img-fluid" src="img/logo.svg" alt="logo">
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><img class="img-fluid" src="img/logo-small.svg" alt="logo"></li>
+                        <li><img class="img-fluid" src="img/home.svg" alt="home"> <span>Home</span></li>
+                        <li><img class="img-fluid" src="img/search.svg" alt="search"> <span>Cerca</span></li>
+                        <li><img class="img-fluid" src="img/libreria.svg" alt="library"> <span>La tua Libreria</span></li>
+                    </ul>
+                </nav>
+                <div class="playlist">
+                    <ul>
+                        <li><h3>PLAYLIST</h3></li>
+                        <li><button class="btn"><i class="fa-solid fa-plus"></i></button> Crea Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-container bottom">
+                <div class="user-menu">
+                    <ul>
+                        <li><img class="img-fluid" src="img/download.svg" alt="download"><span> Download</span></li>
+                        <li><img class="img-fluid" src="img/profile.svg" alt="profile"><span> John Doe</span></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main-head">
+                <button class="btn-upgrade">EFFETTA L'UPGRADE</button>
+            </div>
+            <div class="main-body">
+                <nav class="primary-nav">
+                    <ul>
+                        <li>IN EVIDENZA</li>
+                        <li>PODCAST</li>
+                        <li>CLASSIFICHE</li>
+                        <li>GENERI E MOOD</li>
+                        <li>NUOVE USCITE</li>
+                        <li>SCOPRI</li>
+                    </ul>
+                </nav>
+                <section>
+                    <h2>Recently Played</h2>
+                    <div class="card-row">
+                        <div class="col">
+                            <div class="card-cover">
+                                <img class="img-fluid" src="img/metal_lifting.jpg" alt="metallica">
+                                <div class="hover-play"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h3>Heavy Metal</h3>
+                            <h4>Subtitle</h4>
+                        </div>
+                        <div class="col">
+                            <div class="card-cover">
+                                <img class="img-fluid" src="img/stranger.jpeg" alt="stranger things">
+                                <div class="hover-play"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                            <h4>Kyle Dixon & Micheal Stein</h4>
+                        </div>
+                        <div class="col">
+                            <div class="card-cover">
+                                <img class="img-fluid" src="img/aquietplace.jpeg" alt="a-quiet-place">
+                                <div class="hover-play"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h3>A quiet place</h3>
+                            <h4>Subtitle</h4>
+                        </div>
+                        <div class="col">
+                            <div class="card-cover">
+                                <img class="img-fluid" src="img/split.jpeg" alt="split">
+                                <div class="hover-play"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h3>Split</h3>
+                            <h4>Subtitle</h4>
+                        </div>
+                        <div class="col">
+                            <div class="card-cover">
+                                <img class="img-fluid" src="img/cure.jpeg" alt="cure">
+                                <div class="hover-play"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h3>A cure for wellness</h3>
+                            <h4>Subtitle</h4>
+                        </div>
+                        <div class="col">
+                            <div class="card-cover">
+                                <img class="img-fluid" src="img/sinister.jpeg" alt="sinister">
+                                <div class="hover-play"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h3>Sinister</h3>
+                            <h4>Subtitle</h4>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Creato per Jhon Doe</h2>
+                    <div class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</div>
+                    <div class="card-row">
+                        <div class="col">
+                            <div class="card-cover">
+                                <img class="img-fluid" src="img/radar.jpeg" alt="Realese-radar">
+                                <div class="hover-play"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h3>Realese Radar</h3>
+                        </div>
+                        <div class="col">
+                            <div class="card-cover">
+                                <img class="img-fluid" src="img/mixdaily.jpeg" alt="daily-mix">
+                                <div class="hover-play"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h3>Daily Mix 1</h3>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Artisti più popolari</h2>
+                    <div class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</div>
+                    <div class="card-row">
+                        <div class="col">
+                            <div class="card-cover">
+                                <img class="img-fluid" src="img/youg.jpeg" alt="metallica">
+                                <div class="hover-play"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h3>Lana Del Rey</h3>
+                        </div>
+                        <div class="col">
+                            <div class="card-cover">
+                                <img class="img-fluid" src="img/einaudi.jpeg" alt="einaudi">
+                                <div class="hover-play"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h3>Ludovico Einaudi</h3>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="player-info">
+                <img class="img-fluid" src="img/sinister.jpeg" alt="sinister">
+                <div class="song">
+                    <div class="track-title">Sinister</div>
+                    <div class="song-artist">Brano Nome</div>
+                </div>
+                <div class="action-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+        </div>
+
+
+        <div class="player-controls">
+                <div class="control-buttons">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+                <div class="progress-bar">
+                    <div class="time">0:25 </div>
+                    <div class="slider">
+                        <input type="range" min="1" max="100" value="30" id="song-minutes">
+                    </div>
+                    <div class="time"> 4:35</div>
+                </div>
+        </div>
+
+
+        <div class="extra-controls">
+            <i class="fa-solid fa-list-ul"></i>
+            <i class="fa-solid fa-display"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <input type="range" name="volume" id="vol" min="1" max="100">
+        </div>
+    </footer>
+</body>
+</html>
